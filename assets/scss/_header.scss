@@ -1,0 +1,67 @@
+.header {
+  &__menu {
+    &-logo {
+      padding-top: 12px;
+      padding-bottom: 11px;
+    }
+
+    &-navbar-item {
+      padding-left: 24px;
+
+      &:hover,
+      &:focus {
+        color: $color-yellow;
+      }
+    }
+  }
+
+  &__slider {
+    &-indicators-item {
+      display: block;
+      font-size: 10px;
+    }
+
+    &-slides-item {
+      position: relative;
+      height: 45.5vh;
+      background-size: cover;
+      background-position: 50% 50%;
+    
+      &-wrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      &-caption {
+        position: absolute;
+        left: 130px;
+        top: calc(50% - 74px);
+        color: $color-white;
+
+        h2 {
+          margin-bottom: 20px;
+          font-size: 45px;
+          line-height: 48px;
+          letter-spacing: -25 * 45px / 1000;
+        }
+
+        p {
+          margin-bottom: 34px;
+          width: 62%;
+          font-size: 19px;
+          line-height: 22px;
+          letter-spacing: -25 * 19px / 1000;
+        }
+
+        button {
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: -25 * 16px / 1000;
+        }
+      }
+    }
+  }
+}

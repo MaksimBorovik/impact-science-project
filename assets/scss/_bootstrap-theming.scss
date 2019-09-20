@@ -1,0 +1,58 @@
+.container {
+  max-width: 1210px;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 1);
+  padding: 0 0 0 24px !important;
+  font-size: 0.9rem;
+
+  &:first-of-type {
+    padding: 0 !important;
+  }
+
+  @include xl {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+.carousel-indicators {
+  margin-bottom: 20px;
+
+  li {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 10px;
+    height: 0;
+    text-indent: 0;
+    background: none;
+    color: $color-white;
+    opacity: 1;
+  }
+  
+  .active {
+    color: $color-yellow;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+
+
+.btn {
+  padding: 7px 26px 8px;
+
+  &-warning {
+    background-color: $color-yellow;
+    border-color: $color-yellow;
+  }
+}

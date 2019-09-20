@@ -1,0 +1,43 @@
+block config
+	include ../configs/_main-config
+
+doctype html
+html(lang=lang)
+	head
+		meta(charset="UTF-8")
+		block metatags
+			meta(name='description' content=myDescription)
+			meta(name="viewport", content="width=device-width, initial-scale=1.0")
+			meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title #{myTitle} | #{siteName}
+			block title
+		block links
+			if bootstrap4Global
+				link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+			if bootstrap4Local
+				link(rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css")
+			if googleFonts
+				link(href!="https://fonts.googleapis.com/css?family="+googleFonts+"&display=swap" rel="stylesheet")
+			if fontAwesome
+				link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css")
+			link(rel="stylesheet", href=cssPath+"/style.css")
+
+	body
+		header.header
+			include ../includes/_header
+
+		block content
+
+		footer.footer
+			include ../includes/_footer
+
+		block scripts
+			if jQuery3
+				script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+			if bootstrap4Global || bootstrap4Local
+				script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+			if bootstrap4Global
+				script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+			if bootstrap4Local
+				script(src="libs/bootstrap/dist/js/bootstrap.min.js")
+			script(src="assets/js/main.js")
