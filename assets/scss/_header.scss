@@ -36,30 +36,36 @@
       }
 
       &-caption {
-        position: absolute;
-        left: 130px;
-        top: calc(50% - 74px);
+        
+        
         color: $color-white;
 
-        h2 {
-          margin-bottom: 20px;
-          font-size: 45px;
-          line-height: 48px;
-          letter-spacing: -25 * 45px / 1000;
-        }
+        &-wrapper {
+          position: absolute;
+          // top: calc(50% - 92px);
+          top:  50%;  
+          transform:  translate(0%,  -50%);
 
-        p {
-          margin-bottom: 34px;
-          width: 62%;
-          font-size: 19px;
-          line-height: 22px;
-          letter-spacing: -25 * 19px / 1000;
-        }
-
-        button {
-          font-size: 16px;
-          line-height: 20px;
-          letter-spacing: -25 * 16px / 1000;
+          h1 {
+            margin-bottom: 20px;
+            font-size: 45px;
+            line-height: 48px;
+            letter-spacing: -25 * 45px / 1000;
+          }
+  
+          p {
+            margin-bottom: 34px;
+            width: 62%;
+            font-size: 19px;
+            line-height: 22px;
+            letter-spacing: -25 * 19px / 1000;
+          }
+  
+          button {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -25 * 16px / 1000;
+          }
         }
       }
     }

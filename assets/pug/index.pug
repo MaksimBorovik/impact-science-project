@@ -1,3 +1,21 @@
 extends templates/main-template
 
 block content
+  main.main
+    .main__chat-marker
+        p Live chat
+    .main__chat
+      .main__chat-window
+        .main__chat-window-header
+          p Live chat
+          button.btn
+            i.far.fa-times-circle
+        .main__chat-window-dialog
+          .main__chat-window-dialog-response
+            p Hi there! You've reached the science chat!
+        .main__chat-window-request
+          textarea(maxlegth="1000" rows="1" placeholder="Type your message here...")
+    section.wedo
+      .container
+        h2 What we do
+        p We use professional language skills and advanced design/digital resources to transform the presentation of academic and scientific thinking. The result: distinctive, engaging and memorable communication that enhances research’s commercial possibilities.
