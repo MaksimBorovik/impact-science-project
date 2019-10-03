@@ -1,0 +1,72 @@
+.weare {
+
+  &__title {
+    padding-top: 45px;
+    color: $color-white;
+  }
+
+  &__description {
+    margin: 0 auto 40px;
+    width: 72%;
+    color: $color-white;
+    font-size: 19px;
+    line-height: 20px;
+    letter-spacing: -25 * 19px / 1000;
+  }
+
+  &__papers {
+
+    &-counter {
+      color: #eeab05;
+      font-size: 45px;
+      line-height: 30px;
+      letter-spacing: -25 * 45px / 1000;
+    }
+
+    &-caption {
+      color: $color-white;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: -25 * 45px / 1000;
+    }
+  }
+
+  &__authors {
+
+    &-counter {
+      color: #eeab05;
+      font-size: 45px;
+      line-height: 30px;
+      letter-spacing: -25 * 45px / 1000;
+    }
+
+    &-caption {
+      color: $color-white;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: -25 * 45px / 1000;
+    }
+  }
+
+  &__experts {
+
+    &-counter {
+      color: #eeab05;
+      font-size: 45px;
+      line-height: 30px;
+      letter-spacing: -25 * 45px / 1000;
+    }
+
+    &-caption {
+      color: $color-white;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: -25 * 45px / 1000;
+    }
+  }
+
+  &__button {
+    margin: 0 auto 35px;
+    border-radius: 9px;
+  }
+}

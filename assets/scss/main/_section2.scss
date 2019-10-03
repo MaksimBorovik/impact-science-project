@@ -1,6 +1,21 @@
 .wework {
+  margin-bottom: 68px;
+
+  &__column {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+
+    &:first-of-type {
+      padding-left: 15px;
+    }
+
+    &:last-of-type {
+      padding-right: 15px;
+    }
+  }
 
   &__tile {
+    height: 301px;
     position: relative;
     overflow: hidden;
 

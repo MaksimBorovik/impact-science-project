@@ -22,9 +22,9 @@ block content
     section.wework
       .container
         h2.text-center Sectors we work in
-        .row.mb-5
-          .col-lg-4
-            .wework__tile.col(style="background-image: url(assets/img/Layer-18.jpg); background-size: cover; height: 310px; ")
+        .row
+          .col.col-lg-4.wework__column
+            .wework__tile(style="background-image: url(assets/img/Layer-18.jpg); background-size: cover;")
               .wework__tile-caption
                 .wework__tile-caption-filter
                   h3.text-center Solutions for publishers
@@ -35,8 +35,8 @@ block content
                 .wework__tile-description-filter
                   p Get more from key content collections: Attract the next generation of society members.
                   button.wework__tile-description-button(type="button" class="btn btn-warning") Find out more
-          .col-lg-4
-            .wework__tile.col(style="background-image: url(assets/img/Layer-19.jpg); background-size: cover; height: 310px; ")
+          .col.col-lg-4.wework__column
+            .wework__tile(style="background-image: url(assets/img/Layer-19.jpg); background-size: cover;")
               .wework__tile-caption
                 .wework__tile-caption-filter
                   h3.text-center Solutions for universities
@@ -47,8 +47,8 @@ block content
                 .wework__tile-description-filter
                   p Get more from key content collections: Attract the next generation of society members.
                   button.wework__tile-description-button(type="button" class="btn btn-warning") Find out more
-          .col-lg-4
-            .wework__tile.col(style="background-image: url(assets/img/Layer-20.jpg); background-size: cover; height: 310px; ")
+          .col.col-lg-4.wework__column
+            .wework__tile(style="background-image: url(assets/img/Layer-20.jpg); background-size: cover;")
               .wework__tile-caption
                 .wework__tile-caption-filter
                   h3.text-center Solutions for research groups
@@ -59,3 +59,22 @@ block content
                 .wework__tile-description-filter
                   p Get more from key content collections: Attract the next generation of society members.
                   button.wework__tile-description-button(type="button" class="btn btn-warning") Find out more
+    section.weare
+      .container-fluid(style="background-image: url(assets/img/architecture-bk.jpg); background-size: cover;")
+        .container
+          h2.weare__title.text-center Who we are
+          .row
+            .col
+              p.weare__description.text-center Impact Science is a division of a highly successful global English editing, translation and publication support service. We assist academics, institutions and companies worldwide with publishing in prestigious international journals.
+          .row.mb-4
+            .weare__papers.col.col-lg-4.text-center
+              p.weare__papers-counter 950,000
+              p.weare__papers-caption papers published
+            .weare__authors.col.col-lg-4.text-center
+              p.weare__authors-counter 296,000
+              p.weare__authors-caption authors supported
+            .weare__experts.col.col-lg-4.text-center
+              p.weare__experts-counter 2,000+
+              p.weare__experts-caption experts and communicators
+          .row
+            button.weare__button(type="button" class="btn btn-warning") Read more
