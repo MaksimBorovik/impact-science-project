@@ -1,0 +1,22 @@
+.whywe {
+
+  &__title {
+    padding-top: 50px;
+  }
+
+  &__content {
+    margin-bottom: 24px;
+
+    .fas.fa-check {
+      font-size: 27px;
+    }
+
+    &-item {
+      padding-left: 10px;
+      font-size: 19px;
+      line-height: 20px;
+      letter-spacing: -25 * 19px / 1000;
+
+    }
+  }
+}
