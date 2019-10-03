@@ -147,6 +147,7 @@
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.4px;
+  border-radius: 9px;
 }
 
 .main {
@@ -295,6 +296,151 @@
   font-size: 19px;
   line-height: 20px;
   letter-spacing: -0.475px;
+}
+
+.wework__tile {
+  position: relative;
+  overflow: hidden;
+}
+
+.wework__tile-caption-filter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.wework__tile-caption-filter h3 {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  left: 20%;
+  line-height: 28px;
+  letter-spacing: -0.7px;
+  color: #ffffff;
+}
+
+.wework__tile-caption-triangle {
+  position: absolute;
+  text-align: right;
+  top: 0;
+  right: 0;
+  color: white;
+  width: 14px;
+  height: 14px;
+  border: 20px solid transparent;
+  border-top: 20px solid #eeab05;
+  border-right: 20px solid #eeab05;
+  z-index: 1;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.wework__tile-caption i {
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  font-size: 11px;
+  color: #ffffff;
+}
+
+.wework__tile-caption .line-1,
+.wework__tile-caption .line-2 {
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  z-index: 1;
+  display: block;
+  width: 10px;
+  height: 3px;
+  background-color: #ffffff;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.wework__tile-caption .line-2 {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.wework__tile:hover .line-1 {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.wework__tile:hover .line-2 {
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.wework__tile:hover .wework__tile-description-filter {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.wework__tile:hover .wework__tile-caption-filter {
+  opacity: 0;
+}
+
+.wework__tile:hover .wework__tile-caption-triangle {
+  border-top: 20px solid #000000;
+  border-right: 20px solid #000000;
+}
+
+.wework__tile-description-filter {
+  position: absolute;
+  top: -100%;
+  right: -100%;
+  left: 100%;
+  bottom: 100%;
+  background: -o-linear-gradient(225deg, transparent 20px, rgba(238, 171, 5, 0.78) 0);
+  background: linear-gradient(225deg, transparent 20px, rgba(238, 171, 5, 0.78) 0);
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.wework__tile-description p {
+  position: absolute;
+  top: 40px;
+  left: 35px;
+  right: 70px;
+  font-size: 19px;
+  line-height: 21px;
+  letter-spacing: -0.475px;
+}
+
+.wework__tile-description-button {
+  padding: 9px 15px 12px 15px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  border-color: #000000;
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 20px;
+  letter-spacing: -0.7px;
+  border-radius: 9px;
+}
+
+.wework__tile-description-button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
 }
 
 * {
