@@ -1,0 +1,61 @@
+.footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: $color-black;
+
+  &__left {
+
+    &-social {
+
+
+      &-item {
+        margin-right: 20px;
+        font-size: 25px;
+        color: $color-white;
+
+        &:hover,
+        &:focus {
+          color: $color-yellow;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &-menu {
+
+      &-item {
+        margin-right: 20px;
+        font-family: 'Brother 1816';
+        @include font-settings(14px, 20px, -25);
+        color: $color-white;
+        
+        &:hover {
+          color: $color-yellow;
+          text-decoration: none;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__right {
+
+    &-copyright {
+      margin-bottom: 0;
+      font-family: 'Brother 1816';
+      @include font-settings(14px, 20px, -25);
+      color: $color-white;
+      text-align: right;
+
+      &-highlight {
+        color: $color-yellow;
+      }
+    }
+  }
+}

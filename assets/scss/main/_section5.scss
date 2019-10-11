@@ -1,0 +1,68 @@
+.review {
+
+  &__background {
+    position: relative;
+    display: flex;
+
+    &-filters {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      width: 100%;
+
+      &-filter-1 {
+        flex-basis: calc((100% - 404px) / 2 );
+        background-color: rgba(0, 0, 0, 0.73);
+      }
+  
+      &-filter-2 {
+        flex-basis: 404px;
+        background-color: $color-black;
+      }
+  
+      &-filter-3 {
+        flex-basis: calc((100% - 404px) / 2 );
+        background-color: rgba(255, 255, 255, 0.27);
+      }
+    }
+  }
+
+  &__slider {
+
+    &-item {
+      padding: 47px 47px 50px;
+      text-align: center;
+
+      &-title {
+        margin-bottom: 30px;
+        font-family: 'Brother 1816';
+        @include font-settings(22px, 20px, -25);
+        color: $color-white;
+
+        &-highlight {
+          color: $color-yellow;
+        }
+      }
+
+      &-comment {
+        font-family: 'Brother 1816 Italic';
+        @include font-settings(15px, 17px, -25);
+        color: $color-white;
+      }
+
+      &-logo {
+        margin-bottom: 10px;
+
+      }
+
+      &-sign {
+        font-family: 'Brother 1816';
+        @include font-settings(19px, 20px, -25);
+        color: $color-white;
+      }
+    }
+  }
+}
