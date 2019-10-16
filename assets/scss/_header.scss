@@ -3,6 +3,10 @@
     &-logo {
       padding-top: 12px;
       padding-bottom: 11px;
+
+      @include xs {
+        width: 200px;
+      }
     }
 
     &-navbar-item {

@@ -155,18 +155,17 @@
 }
 
 .main__chat {
-  position: absolute;
-  top: 30px;
+  position: fixed;
+  bottom: 30px;
   left: -300px;
-  -webkit-transition: transoform 0.5s linear;
-  -o-transition: transoform 0.5s linear;
-  transition: transoform 0.5s linear;
+  z-index: 9;
+  -webkit-transition: left 0.5s linear;
+  -o-transition: left 0.5s linear;
+  transition: left 0.5s linear;
 }
 
 .main__chat.active {
-  -webkit-transform: translateX(316px);
-      -ms-transform: translateX(316px);
-          transform: translateX(316px);
+  left: 16px;
 }
 
 .main__chat-window {
@@ -225,10 +224,27 @@
 
 .main__chat-window-dialog-response p {
   position: relative;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
   padding: 8px;
   letter-spacing: 1.2px;
   border-radius: 5px;
   background-color: #8ff168;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  -webkit-transition-delay: 0.5s;
+       -o-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.main__chat-window-dialog-response p.active {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 .main__chat-window-dialog-response p:after {
@@ -266,10 +282,21 @@
 .main__chat-marker {
   position: absolute;
   top: 46px;
+  left: -41px;
+  -webkit-transition: left 0.5s linear;
+  -o-transition: left 0.5s linear;
+  transition: left 0.5s linear;
+  -webkit-transition-delay: 0.5s;
+       -o-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.main__chat-marker.active {
   left: 0;
 }
 
 .main__chat-marker p {
+  border-bottom-left-radius: 9px;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -687,5 +714,24 @@ h2 {
   .nav-link {
     font-size: 0.8rem;
     text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-link {
+    padding-bottom: 10px !important;
+    padding-left: 0 !important;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.016px;
+  }
+  .nav-link:first-of-type {
+    padding: 0 0 10px 0 !important;
+  }
+}
+
+@media (max-width: 424px) {
+  .header__menu-logo {
+    width: 200px;
   }
 }

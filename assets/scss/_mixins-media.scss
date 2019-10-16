@@ -122,3 +122,9 @@
     @content;
   }
 }
+
+@mixin xs-xxs {
+  @media (max-width: $xs - 1) and (min-width: $xxs) {
+    @content;
+  }
+}
