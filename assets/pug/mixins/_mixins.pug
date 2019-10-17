@@ -28,3 +28,27 @@ mixin sliderIndicator(data)
   else
     li(data-target="#carouselExampleCaptions" data-slide-to= data.number )
       i.header__slider-indicators-item(class="fas fa-circle")
+
+mixin solutions(items)
+  .col.col-lg-4.wework__column
+    .wework__tile(style="background-image: url(assets/img/" + items.image + "); background-size: cover;")
+      .wework__tile-caption
+        .wework__tile-caption-filter
+          h3.text-center= items.caption
+        .wework__tile-caption-triangle
+        span.line-1 
+        span.line-2 
+      .wework__tile-description
+        .wework__tile-description-filter
+          p Get more from key content collections: Attract the next generation of society members.
+          button.wework__tile-description-button(type="button" class="btn btn-warning") Find out more
+
+  mixin sliderItem2(data)
+    each item in data
+      .review__slider-item.col-sm-12.col-md-6.col-lg-3.col-xl-4
+        h4.review__slider-item-title Read what our 
+          span.review__slider-item-title-highlight= item.title
+          | clients say
+        p.review__slider-item-comment Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        img(src="assets/img/Layer-22.png", alt="client-logo").review__slider-item-logo
+        p.review__slider-item-sign Client Name, Company

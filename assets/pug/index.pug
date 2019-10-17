@@ -23,42 +23,9 @@ block content
       .container
         h2.text-center Sectors we work in
         .row
-          .col.col-lg-4.wework__column
-            .wework__tile(style="background-image: url(assets/img/Layer-18.jpg); background-size: cover;")
-              .wework__tile-caption
-                .wework__tile-caption-filter
-                  h3.text-center Solutions for publishers
-                .wework__tile-caption-triangle
-                span.line-1 
-                span.line-2 
-              .wework__tile-description
-                .wework__tile-description-filter
-                  p Get more from key content collections: Attract the next generation of society members.
-                  button.wework__tile-description-button(type="button" class="btn btn-warning") Find out more
-          .col.col-lg-4.wework__column
-            .wework__tile(style="background-image: url(assets/img/Layer-19.jpg); background-size: cover;")
-              .wework__tile-caption
-                .wework__tile-caption-filter
-                  h3.text-center Solutions for universities
-                .wework__tile-caption-triangle
-                span.line-1 
-                span.line-2 
-              .wework__tile-description
-                .wework__tile-description-filter
-                  p Get more from key content collections: Attract the next generation of society members.
-                  button.wework__tile-description-button(type="button" class="btn btn-warning") Find out more
-          .col.col-lg-4.wework__column
-            .wework__tile(style="background-image: url(assets/img/Layer-20.jpg); background-size: cover;")
-              .wework__tile-caption
-                .wework__tile-caption-filter
-                  h3.text-center Solutions for research groups
-                .wework__tile-caption-triangle
-                span.line-1 
-                span.line-2 
-              .wework__tile-description
-                .wework__tile-description-filter
-                  p Get more from key content collections: Attract the next generation of society members.
-                  button.wework__tile-description-button(type="button" class="btn btn-warning") Find out more
+          - var solutionItems = [{image: 'Layer-18.jpg', caption: 'Solutions for publishers'}, {image: 'Layer-19.jpg', caption: 'Solutions for universities'}, {image: 'Layer-20.jpg', caption: 'Solutions for research groups'}]
+            each item in solutionItems
+              +solutions(item)
     section.weare
       .container-fluid(style="background-image: url(assets/img/architecture-bk.jpg); background-size: cover;")
         .container
@@ -123,31 +90,5 @@ block content
           .review__background-filters-filter-3
         .container
           .row.review__slider
-            .review__slider-item.col-sm-12.col-md-6.col-lg-3.col-xl-4
-              h4.review__slider-item-title Read what our 
-                span.review__slider-item-title-highlight publishing and journals 
-                | clients say
-              p.review__slider-item-comment Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-              img(src="assets/img/Layer-22.png", alt="client-logo").review__slider-item-logo
-              p.review__slider-item-sign Client Name, Company
-            .review__slider-item.col-sm-12.col-md-6.col-lg-3.col-xl-4
-              h4.review__slider-item-title Read what our 
-                span.review__slider-item-title-highlight university 
-                | clients say
-              p.review__slider-item-comment Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-              img(src="assets/img/Layer-22.png", alt="client-logo").review__slider-item-logo
-              p.review__slider-item-sign Client Name, Company
-            .review__slider-item.col-sm-12.col-md-6.col-lg-3.col-xl-4
-              h4.review__slider-item-title Read what our 
-                span.review__slider-item-title-highlight research group 
-                | clients say
-              p.review__slider-item-comment Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-              img(src="assets/img/Layer-22.png", alt="client-logo").review__slider-item-logo
-              p.review__slider-item-sign Client Name, Company
-            .review__slider-item.col-sm-12.col-md-6.col-lg-3.col-xl-4
-              h4.review__slider-item-title Read what our 
-                span.review__slider-item-title-highlight research group 
-                | clients say
-              p.review__slider-item-comment Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-              img(src="assets/img/Layer-22.png", alt="client-logo").review__slider-item-logo
-              p.review__slider-item-sign Client Name, Company
+            - var sliderItems2 = [{title: 'publishing and journals '}, {title: 'university  '}, {title: 'research group '}, {title: 'publishing and journals '}]
+              +sliderItem2(sliderItems2)
