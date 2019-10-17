@@ -1,5 +1,6 @@
 .header {
   &__menu {
+
     &-logo {
       padding-top: 12px;
       padding-bottom: 11px;
@@ -9,19 +10,75 @@
       }
     }
 
-    &-navbar-item {
-      padding-left: 24px;
+    &-navbar {
 
-      &:hover,
-      &:focus {
-        color: $color-yellow;
+      &-toggler {
+        width: 25px;
+        height: 22px;
+        position: relative;
+        overflow: hidden;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: rgba(0, 0, 0, 0.1);
+        
+        &-icon {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          display: block;
+          background-color: #000000;
+          transition: 0.3s linear;
+          border-radius: 10px;
+    
+          &:first-of-type {
+            top: 1px;
+          }
+    
+          &:nth-of-type(2) {
+            top: 9px;
+          }
+    
+          &:last-of-type {
+            top: 17px;
+          }
+  
+          &.active {
+            background-color: $color-yellow;
+
+            &:first-of-type {
+              top: 9px; 
+              transform: rotate(45deg);
+            }
+      
+            &:nth-of-type(2) {
+              left: -100%;
+            }
+      
+            &:last-of-type {
+              top: 9px;
+              transform: rotate(-45deg);
+            }
+          }
+      }
+
+      
+      }
+
+      &-item {
+        padding-left: 24px;
+  
+        &:hover,
+        &:focus {
+          color: $color-yellow;
+        }
       }
     }
   }
 
   &__slider {
     &-indicators-item {
-      display: block;
+      display: inline;
       font-size: 10px;
     }
 
@@ -40,8 +97,6 @@
       }
 
       &-caption {
-        
-        
         color: $color-white;
 
         &-wrapper {
@@ -52,23 +107,17 @@
 
           h1 {
             margin-bottom: 20px;
-            font-size: 45px;
-            line-height: 48px;
-            letter-spacing: -25 * 45px / 1000;
+            @include font-settings(45px, 48px, -25);
           }
   
           p {
             margin-bottom: 34px;
             width: 62%;
-            font-size: 19px;
-            line-height: 22px;
-            letter-spacing: -25 * 19px / 1000;
+            @include font-settings(19px, 22px, -25);
           }
   
           button {
-            font-size: 16px;
-            line-height: 20px;
-            letter-spacing: -25 * 16px / 1000;
+            @include font-settings(16px, 20px, -25);
             border-radius: 9px;
           }
         }

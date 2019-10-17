@@ -7,19 +7,21 @@
 
     &-social {
 
-
-      &-item {
+      &-link {
         margin-right: 20px;
-        font-size: 25px;
-        color: $color-white;
 
-        &:hover,
-        &:focus {
-          color: $color-yellow;
-        }
-
-        &:last-of-type {
-          margin-right: 0;
+        &-item {
+          font-size: 25px;
+          color: $color-white;
+  
+          &:hover,
+          &:focus {
+            color: $color-yellow;
+          }
+  
+          &:last-of-type {
+            margin-right: 0;
+          }
         }
       }
     }
@@ -28,7 +30,7 @@
 
       &-item {
         margin-right: 20px;
-        font-family: 'Brother 1816';
+        font-family: $font-main;
         @include font-settings(14px, 20px, -25);
         color: $color-white;
         
@@ -48,7 +50,7 @@
 
     &-copyright {
       margin-bottom: 0;
-      font-family: 'Brother 1816';
+      font-family: $font-main;
       @include font-settings(14px, 20px, -25);
       color: $color-white;
       text-align: right;

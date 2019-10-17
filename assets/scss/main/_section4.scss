@@ -13,9 +13,7 @@
 
     &-item {
       padding-left: 10px;
-      font-size: 19px;
-      line-height: 20px;
-      letter-spacing: -25 * 19px / 1000;
+      @include font-settings(19px, 20px, -25);
     }
   }
 }

@@ -1,4 +1,30 @@
-mixin list(className,...items)
-  ul(class=className)
-    each item in items
-      li(class='fab fa-' +item)= item
+mixin social(items)
+  each item in items
+    a(href='#' class='footer__left-social-link')
+      i(class='footer__left-social-link-item fab fa-' +item)
+
+mixin sliderItem(data)
+  if data.number == 0
+    div.header__slider-slides-item(class="carousel-item active" style="background-image: linear-gradient(to left, transparent 27%, rgba(0, 0, 0, 0.85)), url(assets/img/" + data.image + ")")
+      div.header__slider-slides-item-wrapper(style="background-color: #000000; opacity: 0.27;")
+      div.header__slider-slides-item-caption.container
+        .header__slider-slides-item-caption-wrapper
+          h1= data.header
+          p= data.description
+          button(type="button" class="btn btn-warning") Read more
+  else 
+    div.header__slider-slides-item(class="carousel-item" style="background-image: linear-gradient(to left, transparent 27%, rgba(0, 0, 0, 0.85)), url(assets/img/" + data.image + ")")
+      div.header__slider-slides-item-wrapper(style="background-color: #000000; opacity: 0.27;")
+      div.header__slider-slides-item-caption.container
+        .header__slider-slides-item-caption-wrapper
+          h1= data.header
+          p= data.description
+          button(type="button" class="btn btn-warning") Read more
+
+mixin sliderIndicator(data)
+  if data.number == 0
+    li(data-target="#carouselExampleCaptions" data-slide-to= data.number class="active")
+      i.header__slider-indicators-item(class="fas fa-circle")
+  else
+    li(data-target="#carouselExampleCaptions" data-slide-to= data.number )
+      i.header__slider-indicators-item(class="fas fa-circle")

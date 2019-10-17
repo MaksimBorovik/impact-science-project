@@ -129,9 +129,7 @@
         top: 40px;
         left: 35px;
         right: 70px;
-        font-size: 19px;
-        line-height: 21px;
-        letter-spacing: -25 * 19px / 1000;
+        @include font-settings(19px, 21px, -25);
       }
 
       &-button {

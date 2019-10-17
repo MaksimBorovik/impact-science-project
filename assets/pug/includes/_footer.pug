@@ -1,11 +1,13 @@
+include ../mixins/_mixins.pug
+
 .container
         .row
           .footer__left.col-10
             .row
               .footer__left-social.col-2
-                <i class="footer__left-social-item fab fa-twitter"></i>
-                <i class="footer__left-social-item fab fa-linkedin"></i>
-                <i class="footer__left-social-item fab fa-instagram"></i>
+                - var socialLinks = ['twitter', 'linkedin', 'instagram']
+                  +social(socialLinks)
+                
               .footer__left-menu.col-10
                 a.footer__left-menu-item(href="#") Footer Links
                 a.footer__left-menu-item(href="#") Another Link

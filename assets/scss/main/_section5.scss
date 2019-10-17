@@ -38,7 +38,7 @@
 
       &-title {
         margin-bottom: 30px;
-        font-family: 'Brother 1816';
+        font-family: $font-main;
         @include font-settings(22px, 20px, -25);
         color: $color-white;
 
@@ -59,7 +59,7 @@
       }
 
       &-sign {
-        font-family: 'Brother 1816';
+        font-family: $font-main;
         @include font-settings(19px, 20px, -25);
         color: $color-white;
       }
