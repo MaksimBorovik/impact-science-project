@@ -1,17 +1,17 @@
 include ../mixins/_mixins.pug
 
 .container
-        .row
-          .footer__left.col-10
-            .row
-              .footer__left-social.col-2
-                - var socialLinks = ['twitter', 'linkedin', 'instagram']
-                  +social(socialLinks)
-                
-              .footer__left-menu.col-10
-                a.footer__left-menu-item(href="#") Footer Links
-                a.footer__left-menu-item(href="#") Another Link
-                a.footer__left-menu-item(href="#") Link Here
-          .footer__right.col-2
-            p.footer__right-copyright Website by 
-              span.footer__right-copyright-highlight Webheads
+  .row
+    .footer__left.col-sm-12.col-md-8
+      .row
+        .footer__left-social.col-12.col-sm-6.col-md-4.col-3
+          - var socialLinks = ['twitter', 'linkedin', 'instagram']
+            +social(socialLinks)
+          
+        .footer__left-menu.col-12.col-sm-6.col-md-8.col-9
+          a.footer__left-menu-item(href="#") Footer Links
+          a.footer__left-menu-item(href="#") Another Link
+          a.footer__left-menu-item(href="#") Link Here
+    .footer__right.col-sm-12.col-md-4.align-self-center
+      p.footer__right-copyright Website by 
+        span.footer__right-copyright-highlight Webheads

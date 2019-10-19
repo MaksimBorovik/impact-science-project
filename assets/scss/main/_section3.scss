@@ -23,6 +23,10 @@
       color: $color-white;
       @include font-settings(19px, 22px, -25);
     }
+
+    @include lg {
+      margin-bottom: 16px;
+    }
   }
 
   &__authors {
@@ -35,6 +39,10 @@
     &-caption {
       color: $color-white;
       @include font-settings(20px, 30px, -25);
+    }
+
+    @include lg {
+      margin-bottom: 16px;
     }
   }
 

@@ -10,4 +10,8 @@ h2 {
   margin-bottom: 40px;
   font-size: 35px;
   letter-spacing: -25 * 19px / 1000;
+
+  @include xs {
+    font-size: 33px;
+  }
 }

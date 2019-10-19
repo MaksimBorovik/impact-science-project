@@ -12,6 +12,23 @@
     &:last-of-type {
       padding-right: 15px;
     }
+
+    @include lg {
+      &:nth-of-type(2) {
+        padding-right: 15px;
+        margin-bottom: 15px;
+      }
+
+      &:last-of-type {
+        padding-left: 15px;
+      }
+    }
+
+    @include md {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-bottom: 15px;
+    }
   }
 
   &__tile {

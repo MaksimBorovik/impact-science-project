@@ -22,7 +22,7 @@ block content
     section.wework
       .container
         h2.text-center Sectors we work in
-        .row
+        .row.justify-content-center
           - var solutionItems = [{image: 'Layer-18.jpg', caption: 'Solutions for publishers'}, {image: 'Layer-19.jpg', caption: 'Solutions for universities'}, {image: 'Layer-20.jpg', caption: 'Solutions for research groups'}]
             each item in solutionItems
               +solutions(item)
@@ -33,14 +33,14 @@ block content
           .row
             .col
               p.weare__description.text-center Impact Science is a division of a highly successful global English editing, translation and publication support service. We assist academics, institutions and companies worldwide with publishing in prestigious international journals.
-          .row.mb-4
-            .weare__papers.col.col-lg-4.text-center
+          .row.mb-4.justify-content-center
+            .weare__papers.col-sm-12.col-md-6.col-lg-4.text-center
               p.weare__papers-counter 950,000
               p.weare__papers-caption papers published
-            .weare__authors.col.col-lg-4.text-center
+            .weare__authors.col-sm-12.col-md-6.col-lg-4.text-center
               p.weare__authors-counter 296,000
               p.weare__authors-caption authors supported
-            .weare__experts.col.col-lg-4.text-center
+            .weare__experts.col-sm-12.col-md-6.col-lg-4.text-center
               p.weare__experts-counter 2,000+
               p.weare__experts-caption experts and communicators
           .row
@@ -50,14 +50,14 @@ block content
         h2.whywe__title.text-center Why choose Impact Science
         .whywe__content
           .row
-            .col.col-lg-6
+            .col-sm-12.col-md-6
               .row
                 .col-1
                   <i class="fas fa-check"></i>
                 p.whywe__content-item.col
                   b Bespoke solutions
                   |  – We understand the communication challenges facing publishers, laboratories, research institutes and universities.
-            .col.col-lg-6
+            .col-sm-12.col-md-6
               .row
                 .col-1
                   <i class="fas fa-check"></i>
@@ -65,15 +65,14 @@ block content
                   b Reputation for delivery
                   |   – Nearly 300,000 people have benefited from our knowledge and integrity in research communication.
           .row
-            .col.col-lg-6
-              .col.col-lg-6
+            .col-sm-12.col-md-6
               .row
                 .col-1
                   <i class="fas fa-check"></i>
                 p.whywe__content-item.col
                   b Unique combined skillset
                   |   – Our language and design/production skills combine to produce powerful, effective communication.
-            .col.col-lg-6
+            .col-sm-12.col-md-6
               .row
                 .col-1
                   <i class="fas fa-check"></i>

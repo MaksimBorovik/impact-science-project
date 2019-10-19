@@ -87,6 +87,14 @@
       height: 45.5vh;
       background-size: cover;
       background-position: 50% 50%;
+
+      @include lg {
+        height: calc(97vh - 95px);
+      }
+
+      @include xs {
+        height: calc(91vh - 95px);
+      }
     
       &-wrapper {
         position: absolute;
@@ -105,15 +113,42 @@
           top:  50%;  
           transform:  translate(0%,  -50%);
 
+          @include ul {
+            margin-left: 40px;
+          }
+
+          @include lg {
+            margin-right: 40px;
+          }
+
+          @include md {
+            margin-left: 30px;
+            margin-right: 30px;
+          }
+
+          @include md {
+            margin-left: 15px;
+            margin-right: 15px;
+          }
+
           h1 {
             margin-bottom: 20px;
             @include font-settings(45px, 48px, -25);
+
+            @include xs {
+              @include font-settings(30px, 33px, -25);
+            }
+    
           }
-  
+
           p {
             margin-bottom: 34px;
             width: 62%;
             @include font-settings(19px, 22px, -25);
+
+            @include xs {
+              @include font-settings(15px, 18px, -25);
+            }
           }
   
           button {

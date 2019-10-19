@@ -9,11 +9,33 @@
 
     .fas.fa-check {
       font-size: 27px;
+
+      @include lg {
+        font-size: 22px;
+      }
+
+      @include xs {
+        font-size: 18px;
+      }
     }
 
     &-item {
       padding-left: 10px;
       @include font-settings(19px, 20px, -25);
+
+      @include lg {
+        margin-bottom: 32px;
+        @include font-settings(15px, 19px, -25);
+        text-align: justify;
+      }
+
+      @include md {
+        @include font-settings(19px, 20px, -25);
+      }
+
+      @include xs {
+        @include font-settings(16px, 20px, -25);
+      }
     }
   }
 }

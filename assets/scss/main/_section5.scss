@@ -16,16 +16,28 @@
       &-filter-1 {
         flex-basis: calc((100% - 404px) / 2 );
         background-color: rgba(0, 0, 0, 0.73);
+
+        @include xs {
+          flex-basis: 0;
+        }
       }
   
       &-filter-2 {
         flex-basis: 404px;
         background-color: $color-black;
+
+        @include xs {
+          flex-basis: 100%;
+        }
       }
   
       &-filter-3 {
         flex-basis: calc((100% - 404px) / 2 );
         background-color: rgba(255, 255, 255, 0.27);
+
+        @include xs {
+          flex-basis: 0;
+        }
       }
     }
   }
@@ -35,6 +47,22 @@
     &-item {
       padding: 47px 47px 50px;
       text-align: center;
+
+      @include lg {
+        padding: 0.55% 3.5% 0.6%;
+      }
+
+      @include md {
+        padding: 0.55% 2.7% 0.7%;
+      }
+
+      @include sm {
+        padding: 0.55% 2% 1.2%;
+      }
+
+      @include xs {
+        padding: 47px 15px 50px;
+      }
 
       &-title {
         margin-bottom: 30px;

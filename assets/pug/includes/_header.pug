@@ -22,7 +22,7 @@ include ../mixins/_mixins.pug
           a.header__menu-navbar-item(class="nav-item nav-link" href="#") About Us
           a.header__menu-navbar-item(class="nav-item nav-link" href="#") Contact Us
   .header__slider
-    div(id="carouselExampleCaptions" class="carousel slide" data-ride="carousel")
+    div(id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-touch="true")
       ol.header__slider-indicators(class="carousel-indicators")
         each item in sliderItems
           +sliderIndicator(item)

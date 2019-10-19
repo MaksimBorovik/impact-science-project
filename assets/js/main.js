@@ -5,7 +5,15 @@ $(document).ready(function(){
     dots: true,
     swipeToSlide: true,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 });
 
