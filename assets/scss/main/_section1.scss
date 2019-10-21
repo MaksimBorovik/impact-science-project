@@ -175,6 +175,7 @@
       left: -41px;
       transition: left 0.5s linear;
       transition-delay: 0.5s;
+      cursor: pointer;
 
       &.active {
         left: 0;

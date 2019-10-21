@@ -371,6 +371,7 @@
   -webkit-transition-delay: 0.5s;
        -o-transition-delay: 0.5s;
           transition-delay: 0.5s;
+  cursor: pointer;
 }
 
 .main__chat-marker.active {
