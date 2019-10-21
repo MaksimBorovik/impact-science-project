@@ -8,8 +8,21 @@
     z-index: 99;
     transition: left 0.5s linear;
 
+    @include xs {
+      height: 100%;
+      top: -100%;
+      right: 0;
+      left: 0;
+      transition: top 0.5s linear; 
+    }
+
     &.active {
       left: 16px;
+
+      @include xs {
+        top: 0;
+        left: 0;
+      }
     }
 
     &-window {
@@ -20,12 +33,22 @@
       overflow: hidden;
       background:url(/assets/img/bg-chat.jpg);
 
+      @include xs {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+      }
+
       &-header {
         position: relative;
         height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include xs {
+          height: 15%;
+        }
         
         p {
           padding: 0 8px;
@@ -52,6 +75,9 @@
       }
 
       &-dialog { 
+        @include xs {
+          height: 70%;
+        }
         
         &-response {   
           padding: 8px;       
@@ -61,6 +87,9 @@
           background-position: 0;
           background-color: white;
           
+          @include xs {
+            height: 100%;
+          }
 
           p {
             position: relative;
@@ -91,22 +120,50 @@
 
       &-request {
         position: relative;
+        height: 68px;
+
+        @include xs {
+          height: 15%;
+        }
 
         textarea {
           position: absolute;
-          padding: 8px;
+          padding: 7px;
           width: 100%;
-          height: 70px;
           top: 0;
           left: 0;
-          right: 0;
+          width: 80%;
           bottom: 0; 
           resize: none;
           border: none;
           border-top: 1px solid #000;
 
+          @include xs {
+            height: auto;
+            border-radius: 0;
+          }
+
           &:focus {
             outline: 0;
+          }
+        }
+
+        &-send {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          width: 20%;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          border-top: 1px solid #000;
+          border-left: 1px solid #000;
+          background-color: $color-yellow;
+          border-radius: 0;
+          
+          i {
+            font-size: 40px;
           }
         }
       }

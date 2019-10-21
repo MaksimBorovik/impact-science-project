@@ -20,14 +20,18 @@ $(document).ready(function(){
 $('.main__chat-marker').click(function () {
   $('.main__chat').addClass('active').siblings().removeClass('active');
   $('.main__chat-window-dialog-response p').addClass('active');
+  $('body').addClass('active');
 })
 
 $('.fa-times-circle').click(function () {
   $('.main__chat').removeClass('active');
   $('.main__chat-marker').addClass('active')
   $('.main__chat-window-dialog-response p').removeClass('active');
+  $('body').removeClass('active');
 })
 
 $('.navbar-toggler').click(function () {
   $('.header__menu-navbar-toggler-icon').toggleClass('active');
 })
+
+AOS.init();

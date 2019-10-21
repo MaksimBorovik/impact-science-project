@@ -8,7 +8,8 @@
     <title>Impact Science | Publishing and journal
     </title>
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"><link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"><link href="libs/aos/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
@@ -82,7 +83,10 @@
             </div>
           </div>
           <div class="main__chat-window-request">
-            <textarea maxlegth="1000" rows="1" placeholder="Type your message here..."></textarea>
+            <form action="#">
+              <textarea maxlegth="1000" rows="1" placeholder="Type your message here..."></textarea>
+              <button class="main__chat-window-request-send btn" type="submit"><i class="far fa-paper-plane"></i></button>
+            </form>
           </div>
         </div>
       </div>
@@ -96,7 +100,7 @@
         <div class="container">
           <h2 class="text-center">Sectors we work in</h2>
           <div class="row justify-content-center">
-                  <div class="col-12 col-sm-8 col-md-6 col-lg-4 wework__column">
+                  <div class="col-12 col-sm-8 col-md-6 col-lg-4 wework__column" data-aos="flip-right" data-aos-duration="500">
                     <div class="wework__tile" style="background-image: url(assets/img/Layer-18.jpg); background-size: cover;">
                       <div class="wework__tile-caption">
                         <div class="wework__tile-caption-filter">
@@ -112,7 +116,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-8 col-md-6 col-lg-4 wework__column">
+                  <div class="col-12 col-sm-8 col-md-6 col-lg-4 wework__column" data-aos="flip-right" data-aos-duration="500">
                     <div class="wework__tile" style="background-image: url(assets/img/Layer-19.jpg); background-size: cover;">
                       <div class="wework__tile-caption">
                         <div class="wework__tile-caption-filter">
@@ -128,7 +132,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-8 col-md-6 col-lg-4 wework__column">
+                  <div class="col-12 col-sm-8 col-md-6 col-lg-4 wework__column" data-aos="flip-right" data-aos-duration="500">
                     <div class="wework__tile" style="background-image: url(assets/img/Layer-20.jpg); background-size: cover;">
                       <div class="wework__tile-caption">
                         <div class="wework__tile-caption-filter">
@@ -157,15 +161,15 @@
               </div>
             </div>
             <div class="row mb-4 justify-content-center">
-              <div class="weare__papers col-sm-12 col-md-6 col-lg-4 text-center">
+              <div class="weare__papers col-sm-12 col-md-6 col-lg-4 text-center aos-init aos-animate" data-aos="zoom-in-right" data-aos-duration="500">
                 <p class="weare__papers-counter">950,000</p>
                 <p class="weare__papers-caption">papers published</p>
               </div>
-              <div class="weare__authors col-sm-12 col-md-6 col-lg-4 text-center">
+              <div class="weare__authors col-sm-12 col-md-6 col-lg-4 text-center aos-init aos-animate" data-aos="zoom-in" data-aos-duration="500">
                 <p class="weare__authors-counter">296,000</p>
                 <p class="weare__authors-caption">authors supported</p>
               </div>
-              <div class="weare__experts col-sm-12 col-md-6 col-lg-4 text-center">
+              <div class="weare__experts col-sm-12 col-md-6 col-lg-4 text-center aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="500">
                 <p class="weare__experts-counter">2,000+</p>
                 <p class="weare__experts-caption">experts and communicators</p>
               </div>
@@ -181,13 +185,13 @@
           <h2 class="whywe__title text-center">Why choose Impact Science</h2>
           <div class="whywe__content">
             <div class="row">
-              <div class="col-sm-12 col-md-6">
+              <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="fade-down-right" data-aos-duration="2000">
                 <div class="row">
                   <div class="col-1"><i class="fas fa-check"></i></div>
                   <p class="whywe__content-item col"><b>Bespoke solutions</b> – We understand the communication challenges facing publishers, laboratories, research institutes and universities.</p>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-6">
+              <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="fade-down-left" data-aos-duration="2000">
                 <div class="row">
                   <div class="col-1"><i class="fas fa-check"></i></div>
                   <p class="whywe__content-item col"><b>Reputation for delivery</b>  – Nearly 300,000 people have benefited from our knowledge and integrity in research communication.</p>
@@ -195,13 +199,13 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-12 col-md-6">
+              <div class="col-sm-12 col-md-6 aos-init aos-animate" data-aos="fade-up-right" data-aos-duration="2000">
                 <div class="row">
                   <div class="col-1"><i class="fas fa-check"></i></div>
                   <p class="whywe__content-item col"><b>Unique combined skillset</b>  – Our language and design/production skills combine to produce powerful, effective communication.</p>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-6">
+              <div class="col-sm-12 col-md-6" data-aos="fade-up-left" data-aos-duration="2000">
                 <div class="row">
                   <div class="col-1"><i class="fas fa-check"></i></div>
                   <p class="whywe__content-item col"><b>Global reach</b> – We work with people, institutions and companies from all over the world - easily, quickly and very effectively.</p>
@@ -266,7 +270,8 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script><script type="text/javascript" src="libs/slick/slick.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script><script src="libs/aos/dist/aos.js"></script>
+<script type="text/javascript" src="libs/slick/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

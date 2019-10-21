@@ -4,6 +4,13 @@
 
 body {
   font-family: $font-main;
+
+  &.active {
+    @include xs {
+      position: fixed;
+      width:100%;
+    }
+  }
 }
 
 h2 {
