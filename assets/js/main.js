@@ -34,4 +34,39 @@ $('.navbar-toggler').click(function () {
   $('.header__menu-navbar-toggler-icon').toggleClass('active');
 })
 
+import { CountUp } from '/libs/countUp/countUp.min.js';
+
+// window.onload = function() {
+//   // var countUp = new CountUp('weare__papers-counter', 20000);
+//   // countUp.start();
+  
+// }
+
 AOS.init();
+
+var $win = $(window);
+var $marker = $('#pub');
+$win.scroll(function() {
+  if ($win.scrollTop() + $win.height() <= $marker.offset().top) {
+    const countUp = new CountUp('pub', 950000);
+    if (!countUp.error) {
+      countUp.start();
+    } else {
+      console.error(countUp.error);
+    }
+
+    const countUp2 = new CountUp('pub2', 296000);
+    if (!countUp2.error) {
+      countUp2.start();
+    } else {
+      console.error(countUp2.error);
+    }
+
+    const countUp3 = new CountUp('pub3', 2000);
+    if (!countUp3.error) {
+      countUp3.start();
+    } else {
+      console.error(countUp3.error);
+    }
+  }	
+});
