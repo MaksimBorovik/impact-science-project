@@ -31,7 +31,7 @@
       border: 1px solid black;
       border-radius: 15px;
       overflow: hidden;
-      background:url(/assets/img/bg-chat.jpg);
+      background-image:url(/assets/img/bg-chat.jpg);
 
       @include xs {
         width: 100%;
