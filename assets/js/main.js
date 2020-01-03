@@ -1,4 +1,4 @@
-import { CountUp } from '/libs/countUp/count-up.min.js';
+import { CountUp } from './libs/countUp/count-up.min.js';
 
 $(document).ready(function(){
   $('.review__slider').slick({
