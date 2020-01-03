@@ -34,7 +34,7 @@ $('.navbar-toggler').click(function () {
   $('.header__menu-navbar-toggler-icon').toggleClass('active');
 })
 
-import { CountUp } from '/libs/countUp/countUp.min.js';
+import { CountUp } from '/libs/countUp/count-up.min.js';
 
 // window.onload = function() {
 //   // var countUp = new CountUp('weare__papers-counter', 20000);
