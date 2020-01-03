@@ -31,7 +31,7 @@
       border: 1px solid black;
       border-radius: 15px;
       overflow: hidden;
-      background-image:url(/assets/img/bg-chat.jpg);
+      background-image:url(/assets/img/chat.jpg);
 
       @include xs {
         width: 100%;
@@ -82,7 +82,7 @@
         &-response {   
           padding: 8px;       
           height: 310px;
-          background-image: url(/assets/img/bg-dialog.png);
+          background-image: url(/assets/img/dialog.png);
           background-size: auto;
           background-position: 0;
           background-color: white;
