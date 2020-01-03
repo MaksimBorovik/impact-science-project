@@ -1,3 +1,5 @@
+import { CountUp } from '/libs/countUp/count-up.min.js';
+
 $(document).ready(function(){
   $('.review__slider').slick({
     autoplay: true,
@@ -33,14 +35,6 @@ $('.fa-times-circle').click(function () {
 $('.navbar-toggler').click(function () {
   $('.header__menu-navbar-toggler-icon').toggleClass('active');
 })
-
-import { CountUp } from '/libs/countUp/count-up.min.js';
-
-// window.onload = function() {
-//   // var countUp = new CountUp('weare__papers-counter', 20000);
-//   // countUp.start();
-  
-// }
 
 AOS.init();
 
